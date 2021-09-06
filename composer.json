@@ -1,0 +1,16 @@
+{
+    "name": "mmrdev/dynamic-language",
+    "description": "dynamic language with laravel (change the file data in resource/lang)",
+    "autoload": {
+        "psr-4": {
+            "Mmrdev\\DynamicLanguage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MmrDev",
+            "email": "mr.roustana@gmail.com"
+        }
+    ],
+    "require": {}
+}
