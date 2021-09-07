@@ -4,6 +4,7 @@
 namespace App\packages\mmrdev\dynamicLanguage\src\mainClasses;
 
 
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 
@@ -32,7 +33,7 @@ class Helper
 
     protected static function removeKey(array $array, string $key): array
     {
-        unset($array[$key]);
+        Arr::forget($array, $key);
         return $array;
     }
 

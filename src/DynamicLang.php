@@ -5,6 +5,7 @@ namespace App\packages\mmrdev\dynamicLanguage\src;
 
 
 use App\packages\mmrdev\dynamicLanguage\src\mainClasses\Helper;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 
 class DynamicLang extends Helper
@@ -29,6 +30,45 @@ class DynamicLang extends Helper
             throw new \Exception($e->getMessage());
         }
     }
+
+    /**
+     * @throws \Exception
+     */
+    public static function removeLanguage(string $lang): bool
+    {
+        if (File::isDirectory(base_path('resources/lang/' . $lang))) {
+            File::deleteDirectory(base_path('resources/lang/' . $lang));
+            return true;
+        }
+        return false;
+    }
+
+
+    /**
+     * @throws \Exception
+     */
+    public static function addLanguage(string $lang, string $copyFrom = 'en'): bool
+    {
+        if (!File::isDirectory(base_path('resources/lang/' . $lang))) {
+            try {
+                $file = base_path('resources/lang/' . $lang);
+                File::copyDirectory(base_path('resources/lang/' . $copyFrom), $file);
+                $array = self::getFiles($lang);
+                foreach ($array as $item) {
+                    $fileData = self::getData($item, $lang);
+                    foreach (Arr::dot($fileData) as $key => $value) {
+                        self::modifyKey($item, $lang, $key, 'replace', '');
+                    }
+                }
+                return true;
+            } catch (\Exception $e) {
+                File::deleteDirectory(base_path('resources/lang/' . $lang));
+                return false;
+            }
+        }
+        return false;
+    }
+
 
     public static function getData(string $fileName, string $language)
     {
