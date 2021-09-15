@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db691ada-4ff7-4bd0-87e5-620e3c8cf66d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/DynamicLang.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicLang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +36,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -46,10 +52,23 @@
       <updated>1630916606110</updated>
       <workItem from="1630916607237" duration="87000" />
       <workItem from="1631685145129" duration="32000" />
+      <workItem from="1631685683979" duration="346000" />
     </task>
+    <task id="LOCAL-00001" summary="modify namespaces">
+      <created>1631685752022</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1631685752022</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="modify namespaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify namespaces" />
   </component>
 </project>
