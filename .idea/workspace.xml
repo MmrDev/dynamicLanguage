@@ -3,14 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="db691ada-4ff7-4bd0-87e5-620e3c8cf66d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/DynamicLang.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicLang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainClasses/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainClasses/Helper.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -46,6 +45,7 @@
       <option name="presentableId" value="Default" />
       <updated>1630916606110</updated>
       <workItem from="1630916607237" duration="87000" />
+      <workItem from="1631685145129" duration="32000" />
     </task>
     <servers />
   </component>

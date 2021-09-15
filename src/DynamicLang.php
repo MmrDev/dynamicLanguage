@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\packages\mmrdev\dynamicLanguage\src;
+namespace MmrDev\DynamicLanguage;
 
 
-use App\packages\mmrdev\dynamicLanguage\src\mainClasses\Helper;
+use MmrDev\DynamicLanguage\mainClasses\Helper;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 

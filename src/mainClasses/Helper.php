@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\packages\mmrdev\dynamicLanguage\src\mainClasses;
+namespace MmrDev\DynamicLanguage\mainClasses;
 
 
 use Illuminate\Support\Arr;
